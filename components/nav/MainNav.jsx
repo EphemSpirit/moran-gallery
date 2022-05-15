@@ -10,16 +10,16 @@ import {
   Button,
   useMediaQuery,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from "@chakra-ui/icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const MainNav = () => {
-  const [isMobile] = useMediaQuery('(max-width: 768px)')
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   const fullMenu = (
     <>
       <Box color="white">
-        <Breadcrumb pt="3" pr="8" separator=" ">
+        <Breadcrumb pt="3" pr="8" separator="	&#8226;">
           <BreadcrumbItem>
             <BreadcrumbLink href="#">
               <Text>About</Text>
@@ -52,7 +52,9 @@ const MainNav = () => {
         </Breadcrumb>
         <Spacer />
       </Box>
-      <Button color="white">All Products</Button>
+      <Button bg="black" variant="ghost" _hover="black" color="white">
+        All Products
+      </Button>
     </>
   );
 
