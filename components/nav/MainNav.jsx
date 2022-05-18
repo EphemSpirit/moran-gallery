@@ -10,75 +10,61 @@ import {
   Button,
   useMediaQuery,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { GiHamburgerMenu } from "react-icons/gi";
+import CartButton from "../Cart/CartButton.jsx";
 
 const MainNav = () => {
-  const [isMobile] = useMediaQuery('(max-width: 768px)')
-
   const fullMenu = (
     <>
       <Box color="white">
-        <Breadcrumb pt="3" pr="8" separator=" ">
+        <Breadcrumb pt="3" pr="8" separator="	&#8226;">
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">
+            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
               <Text>About</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">
+            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
               <Text>Contact</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">
+            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
               <Text>Portraits</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">
+            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
               <Text>Embroidery</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">
+            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
               <Text>Jewelry</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         <Spacer />
       </Box>
-      <Button color="white">All Products</Button>
+      <CartButton />
     </>
   );
 
   return (
-    <Flex px="8" py="8" bg="black" justifyContent="space-between">
-      <Box bg="black">
-        <Heading size="md" pt="1" color="white">
-          Emily Moran
-        </Heading>
-      </Box>
-      {fullMenu}
-    </Flex>
+    <>
+      <Flex px="8" py="8" bg="black" justifyContent="space-between">
+        <Box bg="black">
+          <Heading size="md" pt="1" color="white">
+            Emily Leslie-Moran
+          </Heading>
+        </Box>
+        {fullMenu}
+      </Flex>
+    </>
   );
 };
 
 export default MainNav;
-
-// export function getServerSideProps() {
-//   const [isMobile] = useMediaQuery('(max-width: 768px)');
-
-//   console.log(`Mobile: ${isMobile}`)
-//   console.log('HEELO')
-
-//   return {
-//     props: {
-//       isMobile: isMobile
-//     }
-//   }
-// }

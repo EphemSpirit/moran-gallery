@@ -3,6 +3,9 @@ import MainNav from '../components/nav/MainNav.jsx';
 import Marquee from "../components/homepage/Marquee.jsx";
 import MobileNav from '../components/nav/MobileNav.jsx';
 
+import '@fontsource/sawarabi-gothic/';
+import '@fontsource/nanum-gothic'
+
 const Home = () => {
     const [isMobile] = useMediaQuery('(max-width: 768px)');
 
@@ -10,7 +13,7 @@ const Home = () => {
         <Fade in={true} style={{ transitionDuration: "1s" }}>
             <Flex direction="column" height="100vh">
                 <Box>
-                    <Box height="50px" bg="black">
+                    <Box height="100px" bg="black">
                         {!isMobile && <MainNav />}
                         {isMobile && <MobileNav />}
                     </Box>
