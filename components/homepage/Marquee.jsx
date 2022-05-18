@@ -3,7 +3,7 @@ import MarqueeText from "./MarqueeText.jsx";
 
 const Marquee = ({ isMobile }) => {
   const bannerText =
-    "The great object of life is sensation - to feel that we exist, even though in pain.\n-Lord Byron";
+    'The great object of life is sensation - to feel that we exist, even though in pain.\n-Lord Byron';
 
   return (
     <Flex
@@ -34,7 +34,7 @@ const Marquee = ({ isMobile }) => {
             alignItems: "center",
           }}
         >
-          <Box
+          {/* <Box
             height="300px"
             width="300px"
             mt="50px"
@@ -47,7 +47,7 @@ const Marquee = ({ isMobile }) => {
               alt="farnsworth portrait"
               borderRadius="50%"
             />
-          </Box>
+          </Box> */}
           <MarqueeText displayText={bannerText} />
         </Slide>
       </Center>

@@ -924,6 +924,11 @@
   "resolved" "https://registry.npmjs.org/@fontsource/nanum-gothic/-/nanum-gothic-4.5.5.tgz"
   "version" "4.5.5"
 
+"@fontsource/roboto-slab@^4.5.8":
+  "integrity" "sha512-qBlkpJ8NNogj9OnZYWowZ9Sc9gnsAxLAMQNDHzYDPE0rSJsaxx6DUbxN9vIM8cvC4HLxfbut2j6J/Hp3ldIW8Q=="
+  "resolved" "https://registry.npmjs.org/@fontsource/roboto-slab/-/roboto-slab-4.5.8.tgz"
+  "version" "4.5.8"
+
 "@fontsource/sawarabi-gothic@^4.5.8":
   "integrity" "sha512-wD/XF6V1SYBZZJ9TRZ0s0jtP0Oc+DyMsm6jLTuCgCGH/71Ik8+D8qTOcFtgeGDJ/yrKc2eY1lvw0uirJgmjf/A=="
   "resolved" "https://registry.npmjs.org/@fontsource/sawarabi-gothic/-/sawarabi-gothic-4.5.8.tgz"

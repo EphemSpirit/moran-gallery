@@ -10,8 +10,7 @@ import {
   Button,
   useMediaQuery,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { GiHamburgerMenu } from "react-icons/gi";
+import CartButton from '../Cart/CartButton.jsx';
 
 const MainNav = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -52,9 +51,7 @@ const MainNav = () => {
         </Breadcrumb>
         <Spacer />
       </Box>
-      <Button bg="black" variant="ghost" _hover="black" color="white">
-        All Products
-      </Button>
+      <CartButton />
     </>
   );
 
@@ -62,7 +59,7 @@ const MainNav = () => {
     <Flex px="8" py="8" bg="black" justifyContent="space-between">
       <Box bg="black">
         <Heading size="md" pt="1" color="white">
-          Emily Moran
+          Emily Leslie-Moran
         </Heading>
       </Box>
       {fullMenu}
