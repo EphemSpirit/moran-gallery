@@ -6,12 +6,15 @@ const CartButton = () => {
       display="flex"
       justifyContent="space-around"
       alignItems="center"
-      color="white"
+      color="black"
+      bg="gray.200"
       border="1px"
       borderRadius="5px"
+      height="50px"
       width="10%"
+      cursor="pointer"
+      _hover={{ backgroundColor: "gray.400", opacity: "0.8", color: "black" }}
     >
-      {/* <Badge border="1px" borderRadius="50%" height="20px" width="20px" /> */}
       <Text fontSize="24px">
         <AiOutlineShoppingCart />
       </Text>

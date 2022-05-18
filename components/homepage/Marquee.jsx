@@ -15,7 +15,7 @@ const Marquee = ({ isMobile }) => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       width="100%"
-      height="100vh"
+      height="87vh"
       className="im-here"
     >
       <Center>

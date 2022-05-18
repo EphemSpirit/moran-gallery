@@ -5,11 +5,11 @@ import Marquee from "../homepage/Marquee.jsx";
 const HomePage = () => {
   return (
     <Flex direction="column" height="100vh">
-      <Box padding="4" height="100vh">
+      <Box padding="4">
         <Box height="50px" bg="#820606">
           <MainNav />
         </Box>
-        <Box background="tomato" height="500px">
+        <Box>
           <Marquee />
         </Box>
       </Box>
