@@ -42,7 +42,7 @@ const MainNav = () => {
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
+            <BreadcrumbLink href="/product-types/jewelry" _hover={{ textDecoration: "none" }}>
               <Text>Jewelry</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
