@@ -5,11 +5,10 @@ import Image from "next/image";
 const ProductCard = ({ title, description, price }) => {
   return (
     <Box
-      height="450px"
+      height="auto"
       width="350px"
       backgroundColor="white"
       shadow="md"
-      mb="60px"
     >
       <Box borderBottom="1px" height="315px" textAlign="center">
         <Image height="315px" width="350px" src={"/assets/prof_portal.jpeg"} />

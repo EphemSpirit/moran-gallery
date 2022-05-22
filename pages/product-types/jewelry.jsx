@@ -18,6 +18,7 @@ const ProductGallery = ({ items }) => {
           flexWrap="wrap"
           justifyContent="space-around"
           mb="12"
+          gap="2"
         >
           {items.map((item) => (
             <ProductCard
