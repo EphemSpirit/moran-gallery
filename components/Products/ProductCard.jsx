@@ -1,19 +1,43 @@
-import { Box, Text, Flex } from '@chakra-ui/react';
+import { Box, Text, Flex, Heading, Button, GridItem } from "@chakra-ui/react";
+import Image from "next/image";
+// import Professor from '/assets/prof_portal.jpeg'
 
-const ProductCard = ({ title, description, price}) => {
-    return (
-        <Flex direction="column" width="350px" height="100%" border="1px">
-            <Box>
-                <Box borderBottom="1px" height="66%">
-                    Image go here - {title}
-                </Box>
-                <Flex direction="column" justifyContent="center" height="33%">
-                    <Text mb="12px" fontWeight="bold">${price}</Text>
-                    <Text>{description}</Text>
-                </Flex>
-            </Box>
-        </Flex>
-    )
+const ProductCard = ({ title, description, price }) => {
+  return (
+    <Box
+      height="450px"
+      width="350px"
+      backgroundColor="white"
+      shadow="md"
+      mb="60px"
+    >
+      <Box borderBottom="1px" height="315px" textAlign="center">
+        <Image height="315px" width="350px" src={"/assets/prof_portal.jpeg"} />
+      </Box>
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+        pt="3"
+        px="4px"
+        py="8px"
+        backgroundColor="black"
+        color="white"
+        borderTop="5px"
+        borderTopColor="gray"
+      >
+        <Heading fontSize="2em">{title}</Heading>
+        <Text>${price}</Text>
+        <Text height="auto" fontSize="14px" textAlign="center" pb="4px">
+          {description}
+        </Text>
+        <Box width="80%" display="flex" justifyContent="space-around">
+          <Button color="black">Add to Cart</Button>
+          <Button color="black">View Item</Button>
+        </Box>
+      </Flex>
+    </Box>
+  );
 };
 
 export default ProductCard;
