@@ -13,10 +13,6 @@ const Home = () => {
         <Fade in={true} style={{ transitionDuration: "1s" }}>
             <Flex direction="column" height="100vh">
                 <Box>
-                    <Box height="100px" bg="black">
-                        {!isMobile && <MainNav />}
-                        {isMobile && <MobileNav />}
-                    </Box>
                     <Box height="px" backgroundImage="url('/assets/ship_background.jpeg')" backgroundPosition="center" backgroundRepeat="no-repeat">
                         <Marquee isMobile={isMobile} />
                     </Box>

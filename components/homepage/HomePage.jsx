@@ -6,9 +6,9 @@ const HomePage = () => {
   return (
     <Flex direction="column" height="100vh">
       <Box padding="4">
-        <Box height="50px" bg="#820606">
+        {/* <Box height="50px" bg="#820606">
           <MainNav />
-        </Box>
+        </Box> */}
         <Box>
           <Marquee />
         </Box>
