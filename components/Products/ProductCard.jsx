@@ -31,7 +31,7 @@ const ProductCard = ({ title, description, price }) => {
         <Text fontSize="14px" pb="4px">
           {description}
         </Text>
-        <Box width="100%" display="flex" justifyContent="flex-start">
+        <Box width="100%" display="flex" justifyContent="center">
           <Button color="black" mr="8px">Add to Cart</Button>
           <Button color="black">View Item</Button>
         </Box>

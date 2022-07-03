@@ -29,13 +29,13 @@ const MainNav = () => {
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
+            <BreadcrumbLink href="/product-types/portraiture" _hover={{ textDecoration: "none" }}>
               <Text>Portraits</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#" _hover={{ textDecoration: "none" }}>
+            <BreadcrumbLink href="/product-types/embroidery" _hover={{ textDecoration: "none" }}>
               <Text>Embroidery</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
