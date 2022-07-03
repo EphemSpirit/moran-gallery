@@ -6,11 +6,10 @@ import {
   Box,
   Spacer,
   Heading,
-  Text,
-  Button,
-  useMediaQuery,
+  Text
 } from "@chakra-ui/react";
 import CartButton from "../Cart/CartButton.jsx";
+import Link from 'next/link'
 
 const MainNav = () => {
   const fullMenu = (
@@ -58,7 +57,9 @@ const MainNav = () => {
       <Flex px="8" py="8" bg="black" justifyContent="space-between">
         <Box bg="black">
           <Heading size="md" pt="1" color="white">
-            Emily Leslie-Moran
+            <Link href={'/'}>
+              Emily Leslie-Moran
+            </Link>
           </Heading>
         </Box>
         {fullMenu}

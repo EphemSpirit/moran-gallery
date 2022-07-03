@@ -5,30 +5,32 @@ import { Flex, Heading, Box, Fade } from "@chakra-ui/react";
 const ProductGallery = ({ items }) => {
   return (
     <>
-      <Box
-        backgroundImage="url('/assets/ship_background.jpeg')"
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-      >
-        <Heading mb="12px" textAlign="center" width="100vw" color="white">
-          Jewelry Items
-        </Heading>
-        <Flex
-          direction="row"
-          flexWrap="wrap"
-          justifyContent="space-around"
-          mb="12"
-          gap="2"
+      <Fade in={true} style={{ transitionDuration: "1s" }}>
+        <Box
+          backgroundImage="url('/assets/ship_background.jpeg')"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
         >
-          {items.map((item) => (
-            <ProductCard
-              title={item.title}
-              price={item.price}
-              description={item.description}
-            />
-          ))}
-        </Flex>
-      </Box>
+          <Heading mb="12px" textAlign="center" width="100vw" color="white">
+            Jewelry Items
+          </Heading>
+          <Flex
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="space-around"
+            gap="2"
+          >
+            {items.map((item) => (
+              <ProductCard
+                key={Math.random()}
+                title={item.title}
+                price={item.price}
+                description={item.description}
+              />
+            ))}
+          </Flex>
+        </Box>
+      </Fade>
     </>
   );
 };

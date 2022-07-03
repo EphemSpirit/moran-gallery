@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Heading, Button, GridItem } from "@chakra-ui/react";
+import { Box, Text, Flex, Heading, Button, Slide } from "@chakra-ui/react";
 import Image from "next/image";
 // import Professor from '/assets/prof_portal.jpeg'
 
@@ -24,14 +24,15 @@ const ProductCard = ({ title, description, price }) => {
         color="white"
         borderTop="5px"
         borderTopColor="gray"
+        text="left"
       >
         <Heading fontSize="2em">{title}</Heading>
         <Text>${price}</Text>
-        <Text height="auto" fontSize="14px" textAlign="center" pb="4px">
+        <Text fontSize="14px" pb="4px">
           {description}
         </Text>
-        <Box width="80%" display="flex" justifyContent="space-around">
-          <Button color="black">Add to Cart</Button>
+        <Box width="100%" display="flex" justifyContent="flex-start">
+          <Button color="black" mr="8px">Add to Cart</Button>
           <Button color="black">View Item</Button>
         </Box>
       </Flex>
